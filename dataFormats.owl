@@ -16,6 +16,7 @@
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24">
         <owl:imports rdf:resource="http://edamontology.org"/>
+        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</doap:Version>
     </owl:Ontology>
     
 
@@ -31,9 +32,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type -->
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -57,11 +58,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -94,11 +95,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -137,11 +138,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -180,11 +181,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -223,11 +224,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -272,11 +273,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -303,11 +304,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -334,11 +335,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -366,11 +367,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -397,11 +398,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -428,11 +429,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -465,11 +466,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -496,11 +497,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -527,11 +528,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -558,11 +559,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -595,11 +596,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -632,11 +633,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -669,11 +670,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -700,11 +701,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -731,11 +732,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -762,11 +763,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -811,11 +812,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -842,11 +843,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -873,11 +874,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -904,11 +905,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -965,11 +966,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -996,11 +997,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1027,11 +1028,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1058,11 +1059,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1095,11 +1096,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1126,11 +1127,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1157,11 +1158,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1188,11 +1189,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1243,11 +1244,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1274,11 +1275,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1312,11 +1313,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1345,11 +1346,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
@@ -1378,11 +1379,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_type"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#file_extension"/>
                         <owl:allValuesFrom>
                             <rdfs:Datatype>
                                 <owl:oneOf>
