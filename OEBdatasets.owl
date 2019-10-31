@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#"
+     xml:base="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:edamontology="http://edamontology.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41">
+        <owl:imports rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#FileType -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#FileType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://edamontology.org/format_1915"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#aggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#aggregation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#assessment">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#configuration_file -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#configuration_file">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#data_log -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#data_log">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#ERR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#input">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#metrics_reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#metrics_reference">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_config -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_config">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#NF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_main -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_main">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#NF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#participant">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#public_reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#public_reference">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#report_image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#report_image">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3547"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#tool_statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#tool_statistics">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-24#TAR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#aggregation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#assessment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#configuration_file"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#data_log"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#input"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#metrics_reference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_config"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#nextflow_workflow_main"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#participant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#public_reference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#report_image"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/esther/ontologies/2019/9/untitled-ontology-41#tool_statistics"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
