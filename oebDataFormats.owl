@@ -85,6 +85,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -128,6 +129,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -171,6 +173,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -214,6 +217,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -263,6 +267,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -294,6 +299,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -325,6 +331,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -419,6 +426,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </rdf:Description>
     
 
@@ -1302,7 +1310,16 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#Log"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDataFormats#FormatDatasets -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDataFormats#FormatDatasets">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
     </owl:Class>
     
 
@@ -1336,6 +1353,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3106"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </owl:Class>
     
 
@@ -1369,6 +1387,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </owl:Class>
     
 
@@ -1419,6 +1438,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats#FormatDatasets"/>
     </owl:Class>
 </rdf:RDF>
 
