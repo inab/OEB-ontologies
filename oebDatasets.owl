@@ -92,6 +92,30 @@
     
 
 
+    <!-- https://w3id.org/oebDataFormats#ERR -->
+
+    <rdf:Description rdf:about="https://w3id.org/oebDataFormats#ERR">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERR</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/oebDataFormats#NF -->
+
+    <rdf:Description rdf:about="https://w3id.org/oebDataFormats#NF">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NF</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/oebDataFormats#TAR -->
+
+    <rdf:Description rdf:about="https://w3id.org/oebDataFormats#TAR">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAR</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/oebDatasets#aggregation -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets#aggregation">
@@ -114,6 +138,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggregation</rdfs:label>
     </owl:Class>
     
 
@@ -132,6 +157,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assessment</rdfs:label>
     </owl:Class>
     
 
@@ -158,6 +184,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">configuration_file</rdfs:label>
     </owl:Class>
     
 
@@ -176,6 +203,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_log</rdfs:label>
     </owl:Class>
     
 
@@ -208,6 +236,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input</rdfs:label>
     </owl:Class>
     
 
@@ -242,6 +271,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metrics_reference</rdfs:label>
     </owl:Class>
     
 
@@ -260,6 +290,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nextflow_workflow_config</rdfs:label>
     </owl:Class>
     
 
@@ -278,6 +309,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nextflow_workflow_main</rdfs:label>
     </owl:Class>
     
 
@@ -308,6 +340,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participant</rdfs:label>
     </owl:Class>
     
 
@@ -342,6 +375,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_reference</rdfs:label>
     </owl:Class>
     
 
@@ -360,6 +394,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">report_image</rdfs:label>
     </owl:Class>
     
 
@@ -378,6 +413,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_statistics</rdfs:label>
     </owl:Class>
     
 
