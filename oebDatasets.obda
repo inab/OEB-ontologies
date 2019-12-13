@@ -12,7 +12,7 @@ foaf:		http://xmlns.com/foaf/0.1/
 obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
-edamontology:	http://edamontology.org/
+edamontology:	http://edamontology.org/EDAM_1.21.owl
 
 [MappingDeclaration] @collection [[
 ]]
