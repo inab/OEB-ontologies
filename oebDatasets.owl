@@ -10,6 +10,7 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
@@ -72,6 +73,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>aggregation</rdfs:label>
     </owl:Class>
     
 
@@ -90,6 +92,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>assessment</rdfs:label>
     </owl:Class>
     
 
@@ -116,6 +119,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>configuration_file</rdfs:label>
     </owl:Class>
     
 
@@ -134,6 +138,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>data_log</rdfs:label>
     </owl:Class>
     
 
@@ -166,6 +171,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>input</rdfs:label>
     </owl:Class>
     
 
@@ -200,6 +206,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>metrics_reference</rdfs:label>
     </owl:Class>
     
 
@@ -218,6 +225,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>nextflow_workflow_config</rdfs:label>
     </owl:Class>
     
 
@@ -236,6 +244,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>nextflow_workflow_main</rdfs:label>
     </owl:Class>
     
 
@@ -266,6 +275,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>participant</rdfs:label>
     </owl:Class>
     
 
@@ -300,6 +310,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>public_reference</rdfs:label>
     </owl:Class>
     
 
@@ -318,6 +329,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>report_image</rdfs:label>
     </owl:Class>
     
 
@@ -336,6 +348,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>tool_statistics</rdfs:label>
     </owl:Class>
     
 
