@@ -12,10 +12,10 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/">
+     xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl">
     <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
-        <owl:imports rdf:resource="http://edamontology.org"/>
+        <owl:imports rdf:resource="http://edamontology.org/EDAM_1.21.owl"/>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</doap:Version>
     </owl:Ontology>
     
