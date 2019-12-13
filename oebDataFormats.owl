@@ -10,7 +10,6 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
