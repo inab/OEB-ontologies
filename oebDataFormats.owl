@@ -15,7 +15,7 @@
      xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl">
     <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
-        <owl:imports rdf:resource="http://edamontology.org/EDAM_1.21.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl"/>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</doap:Version>
     </owl:Ontology>
     
