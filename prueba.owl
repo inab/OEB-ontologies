@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pepito/"
-     xml:base="https://w3id.org/pepito/"
+<rdf:RDF xmlns="https://w3id.org/oebDataFormats/"
+     xml:base="https://w3id.org/oebDataFormats/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,48 +10,13 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://w3id.org/pepito">
+    <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
+        <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
         <owl:imports rdf:resource="http://edamontology.org"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://edamontology.org/format_2332 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_2332">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pepito/PRUEBA"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_3464 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_3464">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pepito/PRUEBA"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pepito/PRUEBA -->
-
-    <owl:Class rdf:about="https://w3id.org/pepito/PRUEBA">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
-    </owl:Class>
 </rdf:RDF>
 
 
