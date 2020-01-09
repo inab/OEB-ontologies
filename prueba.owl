@@ -17,6 +17,41 @@
         <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
         <owl:imports rdf:resource="http://edamontology.org"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/format_2332 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/format_2332">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/PRUEBA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/format_3464 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/format_3464">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/PRUEBA"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/oebDataFormats/PRUEBA -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDataFormats/PRUEBA">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+    </owl:Class>
 </rdf:RDF>
 
 
