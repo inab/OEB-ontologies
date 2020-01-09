@@ -10,12 +10,32 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155">
         <owl:imports rdf:resource="http://edamontology.org"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/PRUEBA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/PRUEBA">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+    </owl:Class>
 </rdf:RDF>
 
 
