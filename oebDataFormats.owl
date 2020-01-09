@@ -11,8 +11,7 @@
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl"/>
