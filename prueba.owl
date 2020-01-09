@@ -31,6 +31,22 @@
     
 
 
+    <!-- http://edamontology.org/format_2332 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/format_2332">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pepito/PRUEBA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/format_3464 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/format_3464">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pepito/PRUEBA"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/pepito/PRUEBA -->
 
     <owl:Class rdf:about="https://w3id.org/pepito/PRUEBA">
