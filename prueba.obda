@@ -1,5 +1,5 @@
 [PrefixDeclaration]
-:		http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/
+:		http://www.semanticweb.org/pepito/
 dc:		http://purl.org/dc/elements/1.1/
 obo:		http://purl.obolibrary.org/obo/
 owl:		http://www.w3.org/2002/07/owl#
