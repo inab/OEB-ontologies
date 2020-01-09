@@ -16,6 +16,7 @@
     <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
         <owl:imports rdf:resource="http://edamontology.org"/>
+        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</doap:Version>
     </owl:Ontology>
     
 
@@ -23,7 +24,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
+    // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -31,9 +32,9 @@
     
 
 
-    <!-- https://w3id.org/oebDataFormats/file_type -->
+    <!-- https://w3id.org/oebDataFormats/file_extension -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/oebDataFormats/file_type"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/oebDataFormats/file_extension"/>
     
 
 
@@ -48,25 +49,41 @@
     
 
 
-    <!-- http://edamontology.org/format_2332 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_2332">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/PRUEBA"/>
-    </rdf:Description>
-    
-
-
     <!-- http://edamontology.org/format_3464 -->
 
     <rdf:Description rdf:about="http://edamontology.org/format_3464">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/PRUEBA"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSON</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
     </rdf:Description>
     
 
 
-    <!-- https://w3id.org/oebDataFormats/PRUEBA -->
+    <!-- https://w3id.org/oebDataFormats/FormatDatasets -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/PRUEBA">
+    <owl:Class rdf:about="https://w3id.org/oebDataFormats/FormatDatasets">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
     </owl:Class>
 </rdf:RDF>
