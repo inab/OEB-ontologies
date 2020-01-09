@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/oebDataFormats/"
-     xml:base="https://w3id.org/oebDataFormats/"
+<rdf:RDF xmlns="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/"
+     xml:base="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,62 +13,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
-        <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155">
         <owl:imports rdf:resource="http://edamontology.org"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/oebDataFormats/ejemplo -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/oebDataFormats/ejemplo"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://edamontology.org/format_2376 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_2376">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/EJEMPLO"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_3464 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_3464">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/EJEMPLO"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/oebDataFormats/EJEMPLO -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/EJEMPLO">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
-    </owl:Class>
 </rdf:RDF>
 
 
