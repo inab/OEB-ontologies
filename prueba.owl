@@ -31,6 +31,14 @@
     
 
 
+    <!-- http://edamontology.org/format_3464 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/format_3464">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/PRUEBA"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/PRUEBA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/esther/ontologies/2020/0/untitled-ontology-155/PRUEBA">
