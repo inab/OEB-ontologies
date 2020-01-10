@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/pepito/"
-     xml:base="http://www.semanticweb.org/pepito/"
+<rdf:RDF xmlns="http://www.semanticweb.org/prueba/"
+     xml:base="http://www.semanticweb.org/prueba/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,11 +11,10 @@
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:mirrors="https://mirrors.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/pepito">
-        <owl:imports rdf:resource="http://edamontology.org"/>
+     xmlns:edamontology="https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/prueba">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl"/>
     </owl:Ontology>
 </rdf:RDF>
 
