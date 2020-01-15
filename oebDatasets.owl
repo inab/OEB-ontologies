@@ -262,6 +262,20 @@
     <!-- https://w3id.org/oebDatasets/participant -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/participant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
