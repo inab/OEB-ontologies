@@ -12,8 +12,10 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mirrors="https://mirrors.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org">
+     xmlns:edamontology="http://edamontology.org"
+     xmlns:edamontology1="http://edamontology.org/">
     <owl:Ontology rdf:about="https://w3id.org/oebDatasets">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDatasets/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
@@ -54,6 +56,7 @@
     <!-- https://w3id.org/oebDatasets/aggregation -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/aggregation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -81,6 +84,7 @@
     <!-- https://w3id.org/oebDatasets/assessment -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/assessment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -100,6 +104,7 @@
     <!-- https://w3id.org/oebDatasets/configuration_file -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/configuration_file">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -127,6 +132,7 @@
     <!-- https://w3id.org/oebDatasets/data_log -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/data_log">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -152,6 +158,7 @@
     <!-- https://w3id.org/oebDatasets/input -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/input">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -179,6 +186,7 @@
     <!-- https://w3id.org/oebDatasets/metrics_reference -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/metrics_reference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -214,6 +222,7 @@
     <!-- https://w3id.org/oebDatasets/nextflow_workflow_config -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_config">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -233,6 +242,7 @@
     <!-- https://w3id.org/oebDatasets/nextflow_workflow_main -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_main">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -252,6 +262,7 @@
     <!-- https://w3id.org/oebDatasets/participant -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/participant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -283,6 +294,7 @@
     <!-- https://w3id.org/oebDatasets/public_reference -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/public_reference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -318,6 +330,7 @@
     <!-- https://w3id.org/oebDatasets/report_image -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/report_image">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -337,6 +350,7 @@
     <!-- https://w3id.org/oebDatasets/tool_statistics -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/tool_statistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
