@@ -38,6 +38,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/oebDatasets/file_type">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oebDatasets/dataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
     </owl:ObjectProperty>
     
 
@@ -262,43 +264,38 @@
     <!-- https://w3id.org/oebDatasets/participant -->
 
     <owl:Class rdf:about="https://w3id.org/oebDatasets/participant">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
-                            </owl:Restriction>
+                            <rdf:Description rdf:about="http://edamontology.org/format_1910"/>
+                            <rdf:Description rdf:about="http://edamontology.org/format_1912"/>
+                            <rdf:Description rdf:about="http://edamontology.org/format_1964"/>
                         </owl:unionOf>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>participant</rdfs:label>
     </owl:Class>
@@ -384,11 +381,45 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/format_1912 -->
+
+    <owl:NamedIndividual rdf:about="http://edamontology.org/format_1912"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://edamontology.org/format_1476"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_1910"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_1912"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_1929"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_1964"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_2332"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_3464"/>
+            <rdf:Description rdf:about="http://edamontology.org/format_3547"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDataFormats/ERR"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDataFormats/LOG"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDataFormats/NF"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDataFormats/TAR"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
