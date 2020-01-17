@@ -589,7 +589,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3106"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdfs:label>
