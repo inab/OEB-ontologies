@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/oebDataFormats/"
-     xml:base="https://w3id.org/oebDataFormats/"
+<rdf:RDF xmlns="https://w3id.org/oebDatasets/"
+     xml:base="https://w3id.org/oebDatasets/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,13 +12,11 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:mirrors="https://mirrors.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://w3id.org/oebDataFormats">
-        <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
-        <owl:imports rdf:resource="http://edamontology.org/EDAM_1.21.owl"/>
-        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</doap:Version>
+     xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl">
+    <owl:Ontology rdf:about="https://w3id.org/oebDatasets">
+        <owl:versionIRI rdf:resource="https://w3id.org/oebDatasets/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
     </owl:Ontology>
     
 
@@ -26,7 +24,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -34,9 +32,11 @@
     
 
 
-    <!-- https://w3id.org/oebDataFormats/file_extension -->
+    <!-- https://w3id.org/oebDatasets/file_type -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/oebDataFormats/file_extension"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/oebDatasets/file_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -51,635 +51,333 @@
     
 
 
-    <!-- http://edamontology.org/format_1476 -->
+    <!-- https://w3id.org/oebDatasets/aggregation -->
 
-    <rdf:Description rdf:about="http://edamontology.org/format_1476">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/aggregation">
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENT</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDB</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_1910 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_1910">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NW</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NWK</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TREE</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEWICK</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_1912 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_1912">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEX</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEXUS</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NXS</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEXUS</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_1929 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_1929">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FA</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FASTA</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FN</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_1964 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_1964">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIST</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TXT</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TXT</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_2332 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_2332">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_3464 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_3464">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSON</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://edamontology.org/format_3547 -->
-
-    <rdf:Description rdf:about="http://edamontology.org/format_3547">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGZIP</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMP</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCM</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIB</rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DICOM</rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GIF</rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IM</rdf:first>
-                                                                                        <rdf:rest>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JPEG</rdf:first>
-                                                                                                <rdf:rest>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JPG</rdf:first>
-                                                                                                        <rdf:rest>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHD</rdf:first>
-                                                                                                                <rdf:rest>
-                                                                                                                    <rdf:Description>
-                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NII</rdf:first>
-                                                                                                                        <rdf:rest>
-                                                                                                                            <rdf:Description>
-                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NRRD</rdf:first>
-                                                                                                                                <rdf:rest>
-                                                                                                                                    <rdf:Description>
-                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBM</rdf:first>
-                                                                                                                                        <rdf:rest>
-                                                                                                                                            <rdf:Description>
-                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCD</rdf:first>
-                                                                                                                                                <rdf:rest>
-                                                                                                                                                    <rdf:Description>
-                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCX</rdf:first>
-                                                                                                                                                        <rdf:rest>
-                                                                                                                                                            <rdf:Description>
-                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PGM</rdf:first>
-                                                                                                                                                                <rdf:rest>
-                                                                                                                                                                    <rdf:Description>
-                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNG</rdf:first>
-                                                                                                                                                                        <rdf:rest>
-                                                                                                                                                                            <rdf:Description>
-                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PPM</rdf:first>
-                                                                                                                                                                                <rdf:rest>
-                                                                                                                                                                                    <rdf:Description>
-                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PPTX</rdf:first>
-                                                                                                                                                                                        <rdf:rest>
-                                                                                                                                                                                            <rdf:Description>
-                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSD</rdf:first>
-                                                                                                                                                                                                <rdf:rest>
-                                                                                                                                                                                                    <rdf:Description>
-                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RGB</rdf:first>
-                                                                                                                                                                                                        <rdf:rest>
-                                                                                                                                                                                                            <rdf:Description>
-                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG</rdf:first>
-                                                                                                                                                                                                                <rdf:rest>
-                                                                                                                                                                                                                    <rdf:Description>
-                                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIFF</rdf:first>
-                                                                                                                                                                                                                        <rdf:rest>
-                                                                                                                                                                                                                            <rdf:Description>
-                                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XBM</rdf:first>
-                                                                                                                                                                                                                                <rdf:rest>
-                                                                                                                                                                                                                                    <rdf:Description>
-                                                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XPM</rdf:first>
-                                                                                                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                                                                                                                                                                    </rdf:Description>
-                                                                                                                                                                                                                                </rdf:rest>
-                                                                                                                                                                                                                            </rdf:Description>
-                                                                                                                                                                                                                        </rdf:rest>
-                                                                                                                                                                                                                    </rdf:Description>
-                                                                                                                                                                                                                </rdf:rest>
-                                                                                                                                                                                                            </rdf:Description>
-                                                                                                                                                                                                        </rdf:rest>
-                                                                                                                                                                                                    </rdf:Description>
-                                                                                                                                                                                                </rdf:rest>
-                                                                                                                                                                                            </rdf:Description>
-                                                                                                                                                                                        </rdf:rest>
-                                                                                                                                                                                    </rdf:Description>
-                                                                                                                                                                                </rdf:rest>
-                                                                                                                                                                            </rdf:Description>
-                                                                                                                                                                        </rdf:rest>
-                                                                                                                                                                    </rdf:Description>
-                                                                                                                                                                </rdf:rest>
-                                                                                                                                                            </rdf:Description>
-                                                                                                                                                        </rdf:rest>
-                                                                                                                                                    </rdf:Description>
-                                                                                                                                                </rdf:rest>
-                                                                                                                                            </rdf:Description>
-                                                                                                                                        </rdf:rest>
-                                                                                                                                    </rdf:Description>
-                                                                                                                                </rdf:rest>
-                                                                                                                            </rdf:Description>
-                                                                                                                        </rdf:rest>
-                                                                                                                    </rdf:Description>
-                                                                                                                </rdf:rest>
-                                                                                                            </rdf:Description>
-                                                                                                        </rdf:rest>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:rest>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:rest>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMG</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/oebDataFormats/ERR -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/ERR">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERR</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/LOG"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERR</rdfs:label>
+        </rdfs:subClassOf>
+        <rdfs:label>aggregation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/oebDataFormats/FormatDatasets -->
+    <!-- https://w3id.org/oebDatasets/assessment -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/FormatDatasets">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/assessment">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>assessment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/oebDataFormats/LOG -->
+    <!-- https://w3id.org/oebDatasets/configuration_file -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/LOG">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/configuration_file">
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdfs:label>
+        </rdfs:subClassOf>
+        <rdfs:label>configuration_file</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/oebDataFormats/NF -->
+    <!-- https://w3id.org/oebDatasets/data_log -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/NF">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/data_log">
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NF</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/ERR"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NF</rdfs:label>
+        </rdfs:subClassOf>
+        <rdfs:label>data_log</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/oebDataFormats/TAR -->
+    <!-- https://w3id.org/oebDatasets/dataset -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDataFormats/TAR">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset"/>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/input -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/input">
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/metrics_reference -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/metrics_reference">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>metrics_reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/nextflow_workflow_config -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_config">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDataFormats/file_extension"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAR</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TBZ</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TBZ2</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGZ</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/NF"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAR</rdfs:label>
+        </rdfs:subClassOf>
+        <rdfs:label>nextflow_workflow_config</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/nextflow_workflow_main -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_main">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/NF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>nextflow_workflow_main</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/participant -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/participant">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/public_reference -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/public_reference">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>public_reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/report_image -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/report_image">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3547"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>report_image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oebDatasets/tool_statistics -->
+
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/tool_statistics">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>tool_statistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/aggregation"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/assessment"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/configuration_file"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/data_log"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/input"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/metrics_reference"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_config"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_main"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/participant"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/public_reference"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/report_image"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/tool_statistics"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
