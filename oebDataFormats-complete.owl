@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/oebDatasets/complete#"
-     xml:base="https://w3id.org/oebDatasets/complete"
+<rdf:RDF xmlns="https://w3id.org/oebDataFormats/complete#"
+     xml:base="https://w3id.org/oebDataFormats/complete"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,8 +12,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://w3id.org/oebDatasets/complete">
-        <owl:versionIRI rdf:resource="https://w3id.org/oebDatasets/complete/0.1"/>
+    <owl:Ontology rdf:about="https://w3id.org/oebDataFormats/complete">
+        <owl:versionIRI rdf:resource="https://w3id.org/oebDataFormats/complete/0.1"/>
         <edamontology:next_id>3866</edamontology:next_id>
         <obo:date>31.07.2018 01:26 GMT</obo:date>
         <obo:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</obo:idspace>
@@ -844,14 +844,6 @@
         <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
     </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/file_type -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/oebDatasets/file_type">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
     
 
 
@@ -33245,10 +33237,8 @@
     <!-- http://edamontology.org/format_3604 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3604">
-        <owl:equivalentClass rdf:resource="http://edamontology.org/format_3838"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <edamontology:created_in>1.11</edamontology:created_in>
         <edamontology:documentation rdf:resource="http://www.w3.org/Graphics/SVG/"/>
         <oboInOwl:hasDefinition>Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation.</oboInOwl:hasDefinition>
@@ -35353,10 +35343,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_3838 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3838">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <edamontology:created_in>1.20</edamontology:created_in>
         <edamontology:documentation rdf:resource="https://msdn.microsoft.com/en-us/library/dd926741(v=office.12).aspx"/>
         <edamontology:media_type rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
@@ -56751,16 +56739,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Nothing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
-    
-
-
     <!-- https://w3id.org/oebDataFormats/ERR -->
 
     <owl:Class rdf:about="https://w3id.org/oebDataFormats/ERR">
-        <owl:equivalentClass rdf:resource="https://w3id.org/oebDataFormats/LOG"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -56791,7 +56772,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1964"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/LOG"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERR</rdfs:label>
     </owl:Class>
@@ -56833,7 +56813,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1964"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDataFormats/FormatDatasets"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOG</rdfs:label>
@@ -56928,320 +56907,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     
 
 
-    <!-- https://w3id.org/oebDatasets/aggregation -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/aggregation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>aggregation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/assessment -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/assessment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>assessment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/configuration_file -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/configuration_file">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>configuration_file</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/data_log -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/data_log">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/ERR"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>data_log</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/dataset -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset"/>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/input -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/input">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>input</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/metrics_reference -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/metrics_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>metrics_reference</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/nextflow_workflow_config -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_config">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/NF"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>nextflow_workflow_config</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/nextflow_workflow_main -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_main">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/NF"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>nextflow_workflow_main</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/participant -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/participant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1910"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1912"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1964"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>participant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/public_reference -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/public_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_1476"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_2332"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3464"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                                <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>public_reference</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/report_image -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/report_image">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="http://edamontology.org/format_3547"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>report_image</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/oebDatasets/tool_statistics -->
-
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/tool_statistics">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/oebDatasets/dataset"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/oebDatasets/file_type"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/oebDataFormats/TAR"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>tool_statistics</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -57260,41 +56925,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Information standard</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://edamontology.org/thematic_editor">
-        <oboInOwl:hasDefinition>Name of thematic editor (http://biotools.readthedocs.io/en/latest/governance.html#registry-editors) responsible for this concept and its children.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:hasDefinition>Name of thematic editor (http://biotools.readthedocs.io/en/latest/governance.html#registry-editors) responsible for this concept and its children.</oboInOwl:hasDefinition>
         <obo:is_metadata_tag>true</obo:is_metadata_tag>
         <rdfs:label>thematic_editor</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://mirrors.org/ID_0888">
         <rdfs:label>hasHumanReadableId</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/aggregation"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/assessment"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/configuration_file"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/data_log"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/input"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/metrics_reference"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_config"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/nextflow_workflow_main"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/participant"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/public_reference"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/report_image"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/tool_statistics"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
