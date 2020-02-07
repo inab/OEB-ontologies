@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1581067223031" name="https://w3id.org/oebDataFormats/" uri="oebDataFormats.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581067223031" name="https://w3id.org/oebDataFormats/complete" uri="oebDataFormats-complete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581067223031" name="https://w3id.org/oebDatasets/" uri="oebDatasets.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581067223031" name="https://w3id.org/oebDatasets/complete" uri="oebDatasets-complete.owl"/>
+    </group>
+</catalog>
