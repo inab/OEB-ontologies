@@ -12,8 +12,10 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mirrors="https://mirrors.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl">
+     xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl"
+     xmlns:edamontology1="http://edamontology.org/">
     <owl:Ontology rdf:about="https://w3id.org/oebDatasets">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDatasets/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
@@ -145,7 +147,9 @@
 
     <!-- https://w3id.org/oebDatasets/dataset -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset"/>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset">
+        <rdfs:label>dataset</rdfs:label>
+    </owl:Class>
     
 
 
