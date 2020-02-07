@@ -15,7 +15,6 @@
      xmlns:mirrors="https://mirrors.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/EDAM_1.21.owl"
-     xmlns:edamontology1="http://edamontology.org/">
     <owl:Ontology rdf:about="https://w3id.org/oebDatasets">
         <owl:versionIRI rdf:resource="https://w3id.org/oebDatasets/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/oebDataFormats/0.1"/>
