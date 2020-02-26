@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/oebDatasets/complete#"
-     xml:base="https://w3id.org/oebDatasets/complete"
+<rdf:RDF xmlns="https://w3id.org/oebDatasets/complete/"
+     xml:base="https://w3id.org/oebDatasets/complete/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -56802,6 +56802,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="https://w3id.org/oebDataFormats/FormatDatasets">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FormatDatasets</rdfs:comment>
     </owl:Class>
     
 
@@ -57026,7 +57027,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <!-- https://w3id.org/oebDatasets/dataset -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset"/>
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/dataset">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dataset</rdfs:comment>
+    </owl:Class>
     
 
 
