@@ -57023,9 +57023,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>data_log</rdfs:label>
     </owl:Class>
     
-    <!-- https://w3id.org/oebDatasets/validation -->
+    <!-- https://w3id.org/oebDatasets/validated_participant -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/validation">
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/validated_participant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/oebDatasets/dataset"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -57038,7 +57038,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:label>validation</rdfs:label>
+        <rdfs:label>Validated participant</rdfs:label>
     </owl:Class>
 
     

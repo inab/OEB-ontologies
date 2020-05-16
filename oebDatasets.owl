@@ -141,9 +141,9 @@
         <rdfs:label>data_log</rdfs:label>
     </owl:Class>
 
-    <!-- https://w3id.org/oebDatasets/validated_data -->
+    <!-- https://w3id.org/oebDatasets/validated_participant -->
 
-    <owl:Class rdf:about="https://w3id.org/oebDatasets/validated_data">
+    <owl:Class rdf:about="https://w3id.org/oebDatasets/validated_participant">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -155,7 +155,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:label>Validated_data</rdfs:label>
+        <rdfs:label>Validated participant</rdfs:label>
     </owl:Class>
 
     
@@ -405,7 +405,7 @@
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/assessment"/>
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/configuration_file"/>
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/data_log"/>
-            <rdf:Description rdf:about="https://w3id.org/oebDatasets/validated_data"/>
+            <rdf:Description rdf:about="https://w3id.org/oebDatasets/validated_participant"/>
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/workflow_stats"/>
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/input"/>
             <rdf:Description rdf:about="https://w3id.org/oebDatasets/metrics_reference"/>
