@@ -155,7 +155,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:label>Validated participant</rdfs:label>
+        <rdfs:label>validated_participant</rdfs:label>
     </owl:Class>
 
     
